@@ -10,6 +10,8 @@
     --icones: #343A40;
     --menuLateral: #F1F0F0;
     --fundoMain: #FAF8F8;
+    --corBotao: #FFFFFF;
+    --corFundoBotao: #037EF8;
 }
 
 
@@ -23,6 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .nav {
@@ -83,7 +86,6 @@ main {
     left: 15vw;
     top: 4rem;
     max-width: calc(100% - 15vw);
-    /* background-color: var(--fundoMain); */
     margin: 1rem;
 }
 
@@ -91,26 +93,23 @@ main {
     text-align: left;
     text-decoration: none;
     font-weight: none;
-    /* margin: 1rem; */
 }
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
-    /*Limita a altura das linha implicitas*/
     grid-auto-rows: 9.375rem;
-    position: fixed;
     text-align: left;
-    /* margin: 1rem; */
     height: 25vw;
     width: 82vw;
+    margin-top: 1rem;
+    z-index: 4;
 }
 
 .gallery div {
     padding: 1rem;
     border-radius: 0.4375rem;
-    /* background-color: aqua; */
     list-style: none;
 }
 
@@ -127,48 +126,96 @@ main {
 .gallery h2 {
     font-size: 15px;
     color: var(--dark);
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .gallery i {
-    color: #0f0f0f;
+    color: rgba(15, 15, 15, 0.2);
     position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
     height: 60px;
     width: 200px;
     justify-content: flex-end;
     align-items: flex-end;
     display: flex;
-    /*Esse box-shadow é para dar sombreamento ao item*/
-    box-shadow: rgba(0, 0, 0, 0.1) inset;
+    font-size: 3rem;
 }
 
 .gallery p {
-    font-size: 12px;
+    font-size: 10px;
     color: var(--title);
     text-align: center;
+    padding: 3px;
+    border-radius: 0 0 7px 7px;
 }
 
 .cardVermelho {
-    background-color: #A45762;
+    background-color: #933644;
+    background-color: rgba(197, 37, 37, 0.7);
 }
 
 .cardAzul {
     background-color: #353384;
+    background-color: rgba(53, 51, 132, 0.8);
 }
 
 .cardVerde {
-    background-color: #326944;
+    background-color: #0A4C20;
+    background-color: rgba(10, 76, 32, 0.8);
 }
 
 .cardLaranja {
-    background-color: #DC7934;
+    background-color: #D45E0C;
+    background-color: rgba(212, 94, 12, 0.8);
 }
 
 
 /*CSS para os botões*/
 
 .botoes {
-    position: relative;
-    display: flex;
-    padding-top: 21rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    text-align: center;
     gap: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.div-sombra {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+}
+
+.botoes a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--dark);
+    display: flex;
+}
+
+.caixaIcone {
+    display: flex;
+    width: 3.125rem;
+    height: 3.125rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: var(--corFundoBotao);
+    color: var(--corBotao);
+}
+
+.cardContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
 }
