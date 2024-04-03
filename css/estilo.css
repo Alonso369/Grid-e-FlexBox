@@ -108,7 +108,7 @@ main {
 }
 
 .gallery div {
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 0.4375rem;
     list-style: none;
 }
@@ -116,6 +116,7 @@ main {
 .gallery h1 {
     font-size: 25px;
     color: var(--dark);
+    margin-left: 1rem;
 }
 
 .gallery a {
@@ -129,19 +130,20 @@ main {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
+    margin-left: 1rem;
 }
 
 .gallery i {
     color: rgba(15, 15, 15, 0.2);
     position: relative;
-    align-items: flex-end;
-    justify-content: flex-end;
     height: 60px;
     width: 200px;
     justify-content: flex-end;
     align-items: flex-end;
     display: flex;
     font-size: 3rem;
+    margin-top: 1.4rem;
+    margin-left: 1.5rem;
 }
 
 .gallery p {
@@ -217,5 +219,4 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
