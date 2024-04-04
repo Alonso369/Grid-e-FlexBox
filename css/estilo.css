@@ -91,8 +91,6 @@ main {
 
 .title-Galery {
     text-align: left;
-    text-decoration: none;
-    font-weight: none;
 }
 
 .gallery {
@@ -100,28 +98,13 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
     grid-auto-rows: 9.375rem;
-    text-align: left;
-    height: 25vw;
-    width: 82vw;
-    margin-top: 1rem;
-    z-index: 4;
-}
-
-.gallery div {
-    /* padding: 1rem; */
-    border-radius: 0.4375rem;
-    list-style: none;
 }
 
 .gallery h1 {
     font-size: 25px;
     color: var(--dark);
     margin-left: 1rem;
-}
-
-.gallery a {
-    text-decoration: none;
-    font-weight: none;
+    margin: 10px;
 }
 
 .gallery h2 {
@@ -133,13 +116,34 @@ main {
     margin-left: 1rem;
 }
 
+.card {
+    position: relative;
+    border-radius: 0.4375rem;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.card a {
+    width: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.card-a {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+}
+
 .gallery i {
     color: rgba(15, 15, 15, 0.2);
-    position: relative;
-    height: 60px;
-    width: 200px;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
     display: flex;
     font-size: 3rem;
     margin-top: 1.4rem;
@@ -155,22 +159,18 @@ main {
 }
 
 .cardVermelho {
-    background-color: #933644;
-    background-color: rgba(197, 37, 37, 0.7);
+    background-color: rgba(147, 54, 68, 0.9);
 }
 
 .cardAzul {
-    background-color: #353384;
     background-color: rgba(53, 51, 132, 0.8);
 }
 
 .cardVerde {
-    background-color: #0A4C20;
     background-color: rgba(10, 76, 32, 0.8);
 }
 
 .cardLaranja {
-    background-color: #D45E0C;
     background-color: rgba(212, 94, 12, 0.8);
 }
 
@@ -185,6 +185,9 @@ main {
     gap: 1rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
 }
 
 .div-sombra {
