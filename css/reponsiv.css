@@ -1,0 +1,12 @@
+@media screen and (min-width:320px) and (max-width: 480px) {
+    main {
+        left: 70vw;
+    }
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-lateral {
+        height: 100%;
+        width: 70vw;
+    }
+}
