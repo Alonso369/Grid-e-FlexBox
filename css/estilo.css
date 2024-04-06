@@ -12,6 +12,10 @@
         --fundoMain: #FAF8F8;
         --corBotao: #FFFFFF;
         --corFundoBotao: #037EF8;
+        --cardVermelho: rgba(147, 54, 68, 0.9);
+        --cardAzul: rgba(53, 51, 132, 0.9);
+        --cardVerde: rgba(10, 76, 32, 0.9);
+        --cardLaranja: rgba(212, 94, 12, 0.9);
     }
     /* CSS do cabeçalho */
     
@@ -26,7 +30,7 @@
         z-index: 1;
     }
     
-    .nav {
+    nav {
         height: 4rem;
         align-items: center;
         color: var(--title);
@@ -37,7 +41,6 @@
     
     .icones {
         display: inline;
-        list-style: none;
         padding: 1rem;
     }
     
@@ -151,19 +154,19 @@
     }
     
     .cardVermelho {
-        background-color: rgba(147, 54, 68, 0.9);
+        background-color: var(--cardVermelho);
     }
     
     .cardAzul {
-        background-color: rgba(53, 51, 132, 0.8);
+        background-color: var(--cardAzul);
     }
     
     .cardVerde {
-        background-color: rgba(10, 76, 32, 0.8);
+        background-color: var(--cardVerde);
     }
     
     .cardLaranja {
-        background-color: rgba(212, 94, 12, 0.8);
+        background-color: var(--cardLaranja);
     }
     /*CSS para os botões*/
     
